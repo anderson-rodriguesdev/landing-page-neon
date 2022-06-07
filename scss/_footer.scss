@@ -112,4 +112,109 @@ footer {
       opacity: 0.8;
     }
   }
+
+  @include responsive(1050px) {
+    .main {
+      nav {
+        max-width: 76rem;
+      }
+    }
+  }
+  @include responsive(991px) {
+    .main {
+      width: 100%;
+      position: relative;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-bottom: 3.6rem;
+      nav {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .item {
+          width: 33.3%;
+          margin-bottom: 5rem;
+        }
+      }
+      .btns {
+        position: absolute;
+        bottom: 11rem;
+        right: 0;
+      }
+    }
+    .mensagem {
+      flex-direction: column;
+      align-items: center;
+      p {
+        margin-left: 0;
+        margin-top: 1rem;
+        text-align: center;
+      }
+    }
+  }
+  @include responsive(600px) {
+    .top {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 4.3rem;
+      margin-bottom: 5.2rem;
+      .share {
+        flex-direction: column;
+        margin-top: 3.2rem;
+        ul {
+          margin-left: 0;
+          margin-top: 2rem;
+        }
+      }
+    }
+    .main {
+      .btns {
+        max-width: 25rem;
+        bottom: 0;
+        position: relative;
+        max-width: 100%;
+        button {
+          padding: 0;
+          justify-content: center;
+          img {
+            display: none;
+          }
+          .info {
+            margin-left: 0;
+            strong,
+            span {
+              display: block;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive(480px) {
+    .main {
+      nav {
+        .item {
+          width: 50%;
+          margin-bottom: 5.3rem;
+        }
+      }
+      .btns {
+        bottom: 0;
+        position: relative;
+        max-width: 100%;
+        button {
+          padding: 0;
+          justify-content: center;
+          .info {
+            strong,
+            span {
+              display: block;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
 }
