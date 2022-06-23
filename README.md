@@ -1,6 +1,8 @@
 # Redesign Landing Page NEON
 
 Clique no ícone para acessar o site do projeto
+<br>
+<br>
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e5a8f22f-e3d0-4a20-b189-72477245de06/deploy-status)](https://app.netlify.com/sites/lp-neon-andersonrodriguesdev/deploys)
 
 
