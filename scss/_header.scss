@@ -1,5 +1,6 @@
 header {
-  position: absolute;
+  position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
@@ -8,6 +9,42 @@ header {
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
   .container {
     @include flex(row, center, space-between);
+  }
+  &.fixed-menu {
+    background-color: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+    .logo {
+      background: url('../img/logo-color.svg') no-repeat center center;
+      background-size: 100%;
+    }
+    nav {
+      ul {
+        li {
+          a {
+            color: #5f5c6b;
+            &:hover {
+              color: #00a5f0;
+            }
+          }
+        }
+      }
+      .btn-secondary {
+        color: #00a5f0;
+        border: 1px solid #00a5f0;
+        &:hover {
+          background-color: #00a5f0;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .logo {
+    display: inline-block;
+    width: 13.2rem;
+    height: 3rem;
+    background: url('../img/logo.svg') no-repeat center center;
+    background-size: 100%;
+    transition: background-image 0.3s;
   }
   nav {
     position: relative;
